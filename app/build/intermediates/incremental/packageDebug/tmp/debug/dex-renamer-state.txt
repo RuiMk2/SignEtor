@@ -1,0 +1,19 @@
+#Sun Dec 01 22:55:14 PST 2024
+base.0=/run/media/ruimk2/sda3/Projects/android/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/run/media/ruimk2/sda3/Projects/android/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.2=/run/media/ruimk2/sda3/Projects/android/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
+base.3=/run/media/ruimk2/sda3/Projects/android/app/build/intermediates/dex/debug/mergeProjectDexDebug/4/classes.dex
+base.4=/run/media/ruimk2/sda3/Projects/android/app/build/intermediates/dex/debug/mergeProjectDexDebug/9/classes.dex
+base.5=/run/media/ruimk2/sda3/Projects/android/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+path.0=classes.dex
+path.1=0/classes.dex
+path.2=11/classes.dex
+path.3=4/classes.dex
+path.4=9/classes.dex
+path.5=classes2.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex
+renamed.3=classes4.dex
+renamed.4=classes5.dex
+renamed.5=classes6.dex

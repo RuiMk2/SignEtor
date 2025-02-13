@@ -1,0 +1,4 @@
+com.google.mediapipe.examples.gesturerecognizer.test.app-androidTest-0 /run/media/ruimk2/sda3/Projects/android/app/build/generated/res/resValues/androidTest/debug
+com.google.mediapipe.examples.gesturerecognizer.test.app-mergeDebugAndroidTestResources-1 /run/media/ruimk2/sda3/Projects/android/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.google.mediapipe.examples.gesturerecognizer.test.app-mergeDebugAndroidTestResources-2 /run/media/ruimk2/sda3/Projects/android/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.google.mediapipe.examples.gesturerecognizer.test.app-debugAndroidTest-3 /run/media/ruimk2/sda3/Projects/android/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources

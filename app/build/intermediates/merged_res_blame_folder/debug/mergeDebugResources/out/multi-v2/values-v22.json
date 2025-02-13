@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-46:/values-v22/values-v22.xml",
+            "map": [
+                {
+                    "source": "/run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/dc0496eeb85fe227334204bc6caca5aa/transformed/appcompat-1.5.1/res/values-v22/values-v22.xml",
+                    "from": {
+                        "startLines": "2,3,4,9",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,130,217,487",
+                        "endLines": "2,3,8,13",
+                        "endColumns": "74,86,12,12",
+                        "endOffsets": "125,212,482,764"
+                    }
+                }
+            ]
+        }
+    ]
+}
