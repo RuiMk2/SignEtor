@@ -28,6 +28,7 @@ class GestureRecognizerResultsAdapter :
     RecyclerView.Adapter<GestureRecognizerResultsAdapter.ViewHolder>() {
     companion object {
         private const val NO_VALUE = "--"
+        var pastLetter = ""
     }
 
     private var adapterCategories: MutableList<Category?> = mutableListOf()
@@ -77,6 +78,8 @@ class GestureRecognizerResultsAdapter :
         fun bind(label: String?, score: Float?) {
             with(binding) {
                 tvLabel.text = label ?: NO_VALUE
+                if (tvLabel.text == "A" && pastLetter == ""){pastLetter = "A"}
+                if (tvLabel.text == "B" && pastLetter == "A") {tvLabel.text = "A2"}
                 tvScore.text = if (score != null) String.format(
                     Locale.US,
                     "%.2f",
