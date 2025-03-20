@@ -45,6 +45,45 @@
                 android:contentDescription="@string/alt_bottom_sheet_chevron"
                 android:src="@drawable/icn_chevron_up" />
         </RelativeLayout>
+        <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TUTORIAL"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/bottom_sheet_text_color"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Sign to the app any letter from the ASL Alphabet and wait for the application to detect your input."
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Add more letters to create words that you would like."
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. If you would like to clear the detection results, either to create new words or clean out the result space, just make a thumbs up gesture to the application."
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
 
         <!-- Inference time row -->
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -72,6 +111,30 @@
                 android:textColor="@color/bottom_sheet_text_color"
                 android:textSize="@dimen/bottom_sheet_text_size" />
         </androidx.appcompat.widget.LinearLayoutCompat>
+                <!-- Delegate selection row -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bottom_sheet_default_row_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_delegate"
+                android:textColor="@color/bottom_sheet_text_color"
+                android:textSize="@dimen/bottom_sheet_text_size" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_delegate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:entries="@array/delegate_spinner_titles"
+                android:minWidth="@dimen/bottom_sheet_spinner_delegate_min_width"
+                android:spinnerMode="dropdown"
+                android:theme="@style/BottomSheetSpinnerItemStyle" />
+
+        </RelativeLayout>
 
         <!-- ML confidence threshold adjustment row -->
         <RelativeLayout
@@ -85,11 +148,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:text="@string/label_hand_detection_confidence_threshold"
+                android:text=""
                 android:textColor="@color/bottom_sheet_text_color"
                 android:textSize="@dimen/bottom_sheet_text_size" />
 
             <LinearLayout
+        android:visibility="gone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -134,11 +198,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:text="@string/label_hand_tracking_confidence_threshold"
+                android:text=""
                 android:textColor="@color/bottom_sheet_text_color"
                 android:textSize="@dimen/bottom_sheet_text_size" />
 
             <LinearLayout
+        android:visibility="gone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -183,11 +248,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:text="@string/label_hand_presence_confidence_threshold"
+                android:text=""
                 android:textColor="@color/bottom_sheet_text_color"
                 android:textSize="@dimen/bottom_sheet_text_size" />
 
             <LinearLayout
+        android:visibility="gone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -221,29 +287,5 @@
             </LinearLayout>
         </RelativeLayout>
 
-        <!-- Delegate selection row -->
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/bottom_sheet_default_row_margin">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/label_delegate"
-                android:textColor="@color/bottom_sheet_text_color"
-                android:textSize="@dimen/bottom_sheet_text_size" />
-
-            <androidx.appcompat.widget.AppCompatSpinner
-                android:id="@+id/spinner_delegate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:entries="@array/delegate_spinner_titles"
-                android:minWidth="@dimen/bottom_sheet_spinner_delegate_min_width"
-                android:spinnerMode="dropdown"
-                android:theme="@style/BottomSheetSpinnerItemStyle" />
-
-        </RelativeLayout>
     </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.core.widget.NestedScrollView>

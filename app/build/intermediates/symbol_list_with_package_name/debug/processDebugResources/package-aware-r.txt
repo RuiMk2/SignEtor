@@ -2709,6 +2709,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable old
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3380,6 +3381,8 @@ layout design_text_input_start_icon
 layout fragment_camera
 layout fragment_gallery
 layout info_bottom_sheet
+layout info_bottom_sheet1
+layout info_bottom_sheet3
 layout item_gesture_recognizer_result
 layout m3_alert_dialog
 layout m3_alert_dialog_actions

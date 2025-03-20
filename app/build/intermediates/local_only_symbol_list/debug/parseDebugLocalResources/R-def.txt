@@ -33,6 +33,7 @@ drawable ic_minus
 drawable ic_plus
 drawable icn_chevron_up
 drawable media_pipe_banner
+drawable old
 id action_camera_to_permissions
 id action_permissions_to_camera
 id bottom_sheet_layout
@@ -72,6 +73,8 @@ layout activity_main
 layout fragment_camera
 layout fragment_gallery
 layout info_bottom_sheet
+layout info_bottom_sheet1
+layout info_bottom_sheet3
 layout item_gesture_recognizer_result
 menu menu_bottom_nav
 mipmap ic_launcher
