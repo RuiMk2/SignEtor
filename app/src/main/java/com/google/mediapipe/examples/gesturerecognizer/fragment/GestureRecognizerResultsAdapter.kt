@@ -28,11 +28,14 @@ class GestureRecognizerResultsAdapter :
     RecyclerView.Adapter<GestureRecognizerResultsAdapter.ViewHolder>() {
     companion object {
         private const val NO_VALUE = "--"
-        var pastLetter = ""
     }
 
     private var adapterCategories: MutableList<Category?> = mutableListOf()
     private var adapterSize: Int = 0
+
+    var pastLetter: String = ""
+    var Word: String = ""
+    var secondFrames = "J"
 
     @SuppressLint("NotifyDataSetChanged")
     fun updateResults(categories: List<Category>?) {
@@ -71,15 +74,28 @@ class GestureRecognizerResultsAdapter :
     }
 
     override fun getItemCount(): Int = adapterCategories.size
-
     inner class ViewHolder(private val binding: ItemGestureRecognizerResultBinding) :
         RecyclerView.ViewHolder(binding.root) {
-
-        fun bind(label: String?, score: Float?) {
+        fun bind(label: String?, score: Float?,) {
             with(binding) {
                 tvLabel.text = label ?: NO_VALUE
-                if (tvLabel.text == "A" && pastLetter == ""){pastLetter = "A"}
-                if (tvLabel.text == "B" && pastLetter == "A") {tvLabel.text = "A2"}
+                var labelToStringBS = ""
+                labelToStringBS += tvLabel.text
+                // Two Frame Check here
+                if (labelToStringBS == "J"){
+                    if (pastLetter == "I"){
+                        Word = Word.removeSuffix("I")
+                        Word += "J"
+                    }
+                }
+                if (labelToStringBS != pastLetter && labelToStringBS.contains(secondFrames) == false){Word += labelToStringBS}
+                if (labelToStringBS != ""){pastLetter = labelToStringBS}
+                Word = Word.replace("--", "")
+                tvLabel.text = Word
+                if (labelToStringBS == "Clear"){
+                    Word = ""
+                    Thread.sleep(1000)
+                }
                 tvScore.text = if (score != null) String.format(
                     Locale.US,
                     "%.2f",
