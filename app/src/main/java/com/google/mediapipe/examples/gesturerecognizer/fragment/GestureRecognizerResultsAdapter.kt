@@ -34,8 +34,16 @@ class GestureRecognizerResultsAdapter :
     private var adapterSize: Int = 0
 
     var pastLetter: String = ""
-    var Word: String = ""
-    var secondFrames = "J"
+    var word: String = ""
+    //R-chan: To future dev, this is the array for two frame check for movement
+    //this would've been better if it was an Object
+    //but due to time constraints I went with this
+    var firstFrames = arrayOf("I","Z 1", "Goodbye 1", "Hello 1", "No 1", "Please 1"
+        , "Sorry 1", "Thank you 1", "Yes 1", "You are Welcome 1")
+    var secondFrames = arrayOf("J","Z 2", "Goodbye 2", "Hello 2", "No 2", "Please 2"
+    , "Sorry 2", "Thank you 2", "Yes 2", "You are Welcome 2")
+    var finalGesture = arrayOf("J","Z", " Goodbye ", " Hello ", " No ", " Please "
+        , " Sorry ", " Thank you ", " Yes ", " You are Welcome ")
 
     @SuppressLint("NotifyDataSetChanged")
     fun updateResults(categories: List<Category>?) {
@@ -81,22 +89,32 @@ class GestureRecognizerResultsAdapter :
                 tvLabel.text = label ?: NO_VALUE
                 var labelToStringBS = ""
                 labelToStringBS += tvLabel.text
-                // Two Frame Check here
-                if (labelToStringBS == "J"){
-                    if (pastLetter == "I"){
-                        Word = Word.removeSuffix("I")
-                        Word += "J"
+
+                if (labelToStringBS in firstFrames){
+                    Thread.sleep(300)
+                }
+                else if(labelToStringBS in secondFrames){
+                    if(pastLetter == firstFrames[secondFrames.indexOf(labelToStringBS)]){
+                        word = word.removeSuffix(firstFrames[secondFrames.indexOf(labelToStringBS)])
+                        word += finalGesture[secondFrames.indexOf(labelToStringBS)]
+                    }
+                    else{
+                        labelToStringBS = ""
                     }
                 }
-                if (labelToStringBS != pastLetter && labelToStringBS.contains(secondFrames) == false){Word += labelToStringBS}
-                if (labelToStringBS != ""){pastLetter = labelToStringBS}
-                Word = Word.replace("--", "")
-                tvLabel.text = Word
+                if (labelToStringBS != pastLetter && labelToStringBS !in secondFrames && score != null && score.compareTo(0.75) > -1 ){
+                    word += labelToStringBS}
+                if (labelToStringBS != "" && score != null && score.compareTo(0.75) > -1 ){
+                    pastLetter = labelToStringBS}
+                word = word.replace("--", "")
+                tvLabel.text = word
                 if (labelToStringBS == "Clear"){
-                    Word = ""
+                    word = ""
                     Thread.sleep(1000)
                 }
-                tvScore.text = if (score != null) String.format(
+
+
+                tvScore.text = if (score != null && score.compareTo(0.75) > -1 ) String.format(
                     Locale.US,
                     "%.2f",
                     score
