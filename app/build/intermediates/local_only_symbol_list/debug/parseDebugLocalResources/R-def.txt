@@ -37,6 +37,9 @@ drawable old
 id action_camera_to_permissions
 id action_permissions_to_camera
 id bottom_sheet_layout
+id btn_backspace
+id btn_clear
+id button_container
 id camera_container
 id camera_fragment
 id detection_threshold_minus

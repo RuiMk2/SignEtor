@@ -16,9 +16,14 @@
 package com.google.mediapipe.examples.gesturerecognizer.fragment
 
 import android.annotation.SuppressLint
+import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.google.mediapipe.examples.gesturerecognizer.R
 import com.google.mediapipe.examples.gesturerecognizer.databinding.ItemGestureRecognizerResultBinding
 import com.google.mediapipe.tasks.components.containers.Category
 import java.util.Locale
@@ -44,6 +49,7 @@ class GestureRecognizerResultsAdapter :
     , "Sorry 2", "Thank you 2", "Yes 2", "You are Welcome 2")
     var finalGesture = arrayOf("J","Z", " Goodbye ", " Hello ", " No ", " Please "
         , " Sorry ", " Thank you ", " Yes ", " You are Welcome ")
+
 
     @SuppressLint("NotifyDataSetChanged")
     fun updateResults(categories: List<Category>?) {
@@ -121,5 +127,27 @@ class GestureRecognizerResultsAdapter :
                 ) else NO_VALUE
             }
         }
+    }
+    //unimplemented button function
+    private lateinit var btnClear: Button
+    private lateinit var btnBackspace: Button
+    fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?): View? {
+        val view = inflater.inflate(R.layout.activity_main, container, false)
+        // Initialize the gesture result display and buttons
+        btnClear = view.findViewById(R.id.btn_clear)
+        btnBackspace = view.findViewById(R.id.btn_backspace)
+
+        // Set button click listeners
+        btnClear.setOnClickListener {
+            word = ""  // Clear the result
+        }
+
+        btnBackspace.setOnClickListener {
+            word = ""
+        }
+
+        return view
     }
 }

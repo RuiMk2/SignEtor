@@ -2816,7 +2816,10 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btn_backspace
+id btn_clear
 id buttonPanel
+id button_container
 id cache_measures
 id callMeasure
 id camera_container

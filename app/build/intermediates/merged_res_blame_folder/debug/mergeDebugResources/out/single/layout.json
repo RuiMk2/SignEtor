@@ -12,12 +12,12 @@
         "source": "/run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/daemon/8.9/com.google.mediapipe.examples.gesturerecognizer.app-main-50:/layout/info_bottom_sheet.xml"
     },
     {
-        "merged": "com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-47:/layout/info_bottom_sheet.xml",
-        "source": "com.google.mediapipe.examples.gesturerecognizer.app-main-50:/layout/info_bottom_sheet.xml"
-    },
-    {
         "merged": "/run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/daemon/8.9/com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-47:/layout/item_gesture_recognizer_result.xml",
         "source": "/run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/daemon/8.9/com.google.mediapipe.examples.gesturerecognizer.app-main-50:/layout/item_gesture_recognizer_result.xml"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-47:/layout/activity_main.xml",
+        "source": "com.google.mediapipe.examples.gesturerecognizer.app-main-50:/layout/activity_main.xml"
     },
     {
         "merged": "/run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/daemon/8.9/com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-47:/layout/fragment_gallery.xml",

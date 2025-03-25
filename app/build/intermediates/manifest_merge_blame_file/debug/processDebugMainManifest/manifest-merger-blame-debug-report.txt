@@ -18,7 +18,7 @@
 18    xmlns:dist="http://schemas.android.com/apk/distribution"
 19    package="com.google.mediapipe.examples.gesturerecognizer"
 20    android:versionCode="1"
-21    android:versionName="1.0" >
+21    android:versionName="3.23.25" >
 22
 23    <uses-sdk
 24        android:minSdkVersion="24"
@@ -66,115 +66,114 @@
 49-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:35:9-35
 50        android:taskAffinity=""
 50-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:36:9-32
-51        android:testOnly="true"
-52        android:theme="@style/Theme.GestureRecognizer" >
-52-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:37:9-55
-53        <activity
-53-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:40:9-53:20
-54            android:name="com.google.mediapipe.examples.gesturerecognizer.MainActivity"
-54-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:41:13-41
-55            android:exported="true" >
-55-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:42:13-36
-56            <intent-filter>
-56-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:43:13-47:29
-57                <action android:name="android.intent.action.MAIN" />
-57-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:44:17-69
-57-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:44:25-66
-58
-59                <category android:name="android.intent.category.LAUNCHER" />
-59-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:46:17-77
-59-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:46:27-74
-60            </intent-filter>
-61
-62            <!-- Declare notch support -->
-63            <meta-data
-63-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:50:13-52:40
-64                android:name="android.notch_support"
-64-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:51:17-53
-65                android:value="true" />
-65-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:52:17-37
-66        </activity>
-67
-68        <uses-library
-68-->[androidx.window:window:1.1.0-alpha03] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/b6cea83dc91a208803bec349a514657a/transformed/window-1.1.0-alpha03/AndroidManifest.xml:23:9-25:40
-69            android:name="androidx.window.extensions"
-69-->[androidx.window:window:1.1.0-alpha03] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/b6cea83dc91a208803bec349a514657a/transformed/window-1.1.0-alpha03/AndroidManifest.xml:24:13-54
-70            android:required="false" />
-70-->[androidx.window:window:1.1.0-alpha03] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/b6cea83dc91a208803bec349a514657a/transformed/window-1.1.0-alpha03/AndroidManifest.xml:25:13-37
-71        <uses-library
-71-->[androidx.window:window:1.1.0-alpha03] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/b6cea83dc91a208803bec349a514657a/transformed/window-1.1.0-alpha03/AndroidManifest.xml:26:9-28:40
-72            android:name="androidx.window.sidecar"
-72-->[androidx.window:window:1.1.0-alpha03] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/b6cea83dc91a208803bec349a514657a/transformed/window-1.1.0-alpha03/AndroidManifest.xml:27:13-51
-73            android:required="false" />
-73-->[androidx.window:window:1.1.0-alpha03] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/b6cea83dc91a208803bec349a514657a/transformed/window-1.1.0-alpha03/AndroidManifest.xml:28:13-37
-74
-75        <service
-75-->[androidx.camera:camera-camera2:1.2.0-alpha02] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4e85ddc121ccaa1b1d8d9e3d560cbf2c/transformed/camera-camera2-1.2.0-alpha02/AndroidManifest.xml:25:9-34:19
-76            android:name="androidx.camera.core.impl.MetadataHolderService"
-76-->[androidx.camera:camera-camera2:1.2.0-alpha02] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4e85ddc121ccaa1b1d8d9e3d560cbf2c/transformed/camera-camera2-1.2.0-alpha02/AndroidManifest.xml:26:13-75
-77            android:enabled="false"
-77-->[androidx.camera:camera-camera2:1.2.0-alpha02] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4e85ddc121ccaa1b1d8d9e3d560cbf2c/transformed/camera-camera2-1.2.0-alpha02/AndroidManifest.xml:27:13-36
-78            android:exported="false" >
-78-->[androidx.camera:camera-camera2:1.2.0-alpha02] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4e85ddc121ccaa1b1d8d9e3d560cbf2c/transformed/camera-camera2-1.2.0-alpha02/AndroidManifest.xml:28:13-37
-79            <meta-data
-79-->[androidx.camera:camera-camera2:1.2.0-alpha02] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4e85ddc121ccaa1b1d8d9e3d560cbf2c/transformed/camera-camera2-1.2.0-alpha02/AndroidManifest.xml:31:13-33:89
-80                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
-80-->[androidx.camera:camera-camera2:1.2.0-alpha02] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4e85ddc121ccaa1b1d8d9e3d560cbf2c/transformed/camera-camera2-1.2.0-alpha02/AndroidManifest.xml:32:17-103
-81                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
-81-->[androidx.camera:camera-camera2:1.2.0-alpha02] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4e85ddc121ccaa1b1d8d9e3d560cbf2c/transformed/camera-camera2-1.2.0-alpha02/AndroidManifest.xml:33:17-86
-82        </service>
-83
-84        <provider
-84-->[androidx.emoji2:emoji2:1.2.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/3b0f8e3db5e6b982173b37f5fe88f5d3/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-85            android:name="androidx.startup.InitializationProvider"
-85-->[androidx.emoji2:emoji2:1.2.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/3b0f8e3db5e6b982173b37f5fe88f5d3/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-86            android:authorities="com.google.mediapipe.examples.gesturerecognizer.androidx-startup"
-86-->[androidx.emoji2:emoji2:1.2.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/3b0f8e3db5e6b982173b37f5fe88f5d3/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-87            android:exported="false" >
-87-->[androidx.emoji2:emoji2:1.2.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/3b0f8e3db5e6b982173b37f5fe88f5d3/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-88            <meta-data
-88-->[androidx.emoji2:emoji2:1.2.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/3b0f8e3db5e6b982173b37f5fe88f5d3/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-89                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-89-->[androidx.emoji2:emoji2:1.2.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/3b0f8e3db5e6b982173b37f5fe88f5d3/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-90                android:value="androidx.startup" />
-90-->[androidx.emoji2:emoji2:1.2.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/3b0f8e3db5e6b982173b37f5fe88f5d3/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
-91            <meta-data
-91-->[androidx.lifecycle:lifecycle-process:2.4.1] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/9cc7fb7e5fe54ba7ec986191d955de63/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
-92                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-92-->[androidx.lifecycle:lifecycle-process:2.4.1] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/9cc7fb7e5fe54ba7ec986191d955de63/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
-93                android:value="androidx.startup" />
-93-->[androidx.lifecycle:lifecycle-process:2.4.1] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/9cc7fb7e5fe54ba7ec986191d955de63/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
-94        </provider>
-95
-96        <service
-96-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4ee21f87de6641eeab6037e6e425cec7/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:29:9-35:19
-97            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-97-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4ee21f87de6641eeab6037e6e425cec7/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:30:13-103
-98            android:exported="false" >
-98-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4ee21f87de6641eeab6037e6e425cec7/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:31:13-37
-99            <meta-data
-99-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4ee21f87de6641eeab6037e6e425cec7/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:32:13-34:39
-100                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-100-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4ee21f87de6641eeab6037e6e425cec7/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:33:17-94
-101                android:value="cct" />
-101-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4ee21f87de6641eeab6037e6e425cec7/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:34:17-36
-102        </service>
-103        <service
-103-->[com.google.android.datatransport:transport-runtime:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/90ced2a24a756e20fec64b1730ca17cf/transformed/transport-runtime-3.1.0/AndroidManifest.xml:26:9-30:19
-104            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-104-->[com.google.android.datatransport:transport-runtime:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/90ced2a24a756e20fec64b1730ca17cf/transformed/transport-runtime-3.1.0/AndroidManifest.xml:27:13-117
-105            android:exported="false"
-105-->[com.google.android.datatransport:transport-runtime:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/90ced2a24a756e20fec64b1730ca17cf/transformed/transport-runtime-3.1.0/AndroidManifest.xml:28:13-37
-106            android:permission="android.permission.BIND_JOB_SERVICE" >
-106-->[com.google.android.datatransport:transport-runtime:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/90ced2a24a756e20fec64b1730ca17cf/transformed/transport-runtime-3.1.0/AndroidManifest.xml:29:13-69
-107        </service>
-108
-109        <receiver
-109-->[com.google.android.datatransport:transport-runtime:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/90ced2a24a756e20fec64b1730ca17cf/transformed/transport-runtime-3.1.0/AndroidManifest.xml:32:9-34:40
-110            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-110-->[com.google.android.datatransport:transport-runtime:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/90ced2a24a756e20fec64b1730ca17cf/transformed/transport-runtime-3.1.0/AndroidManifest.xml:33:13-132
-111            android:exported="false" />
-111-->[com.google.android.datatransport:transport-runtime:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/90ced2a24a756e20fec64b1730ca17cf/transformed/transport-runtime-3.1.0/AndroidManifest.xml:34:13-37
-112    </application>
-113
-114</manifest>
+51        android:theme="@style/Theme.GestureRecognizer" >
+51-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:37:9-55
+52        <activity
+52-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:40:9-53:20
+53            android:name="com.google.mediapipe.examples.gesturerecognizer.MainActivity"
+53-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:41:13-41
+54            android:exported="true" >
+54-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:42:13-36
+55            <intent-filter>
+55-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:43:13-47:29
+56                <action android:name="android.intent.action.MAIN" />
+56-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:44:17-69
+56-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:44:25-66
+57
+58                <category android:name="android.intent.category.LAUNCHER" />
+58-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:46:17-77
+58-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:46:27-74
+59            </intent-filter>
+60
+61            <!-- Declare notch support -->
+62            <meta-data
+62-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:50:13-52:40
+63                android:name="android.notch_support"
+63-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:51:17-53
+64                android:value="true" />
+64-->/run/media/ruimk2/sda3/Projects/android/app/src/main/AndroidManifest.xml:52:17-37
+65        </activity>
+66
+67        <uses-library
+67-->[androidx.window:window:1.1.0-alpha03] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/b6cea83dc91a208803bec349a514657a/transformed/window-1.1.0-alpha03/AndroidManifest.xml:23:9-25:40
+68            android:name="androidx.window.extensions"
+68-->[androidx.window:window:1.1.0-alpha03] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/b6cea83dc91a208803bec349a514657a/transformed/window-1.1.0-alpha03/AndroidManifest.xml:24:13-54
+69            android:required="false" />
+69-->[androidx.window:window:1.1.0-alpha03] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/b6cea83dc91a208803bec349a514657a/transformed/window-1.1.0-alpha03/AndroidManifest.xml:25:13-37
+70        <uses-library
+70-->[androidx.window:window:1.1.0-alpha03] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/b6cea83dc91a208803bec349a514657a/transformed/window-1.1.0-alpha03/AndroidManifest.xml:26:9-28:40
+71            android:name="androidx.window.sidecar"
+71-->[androidx.window:window:1.1.0-alpha03] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/b6cea83dc91a208803bec349a514657a/transformed/window-1.1.0-alpha03/AndroidManifest.xml:27:13-51
+72            android:required="false" />
+72-->[androidx.window:window:1.1.0-alpha03] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/b6cea83dc91a208803bec349a514657a/transformed/window-1.1.0-alpha03/AndroidManifest.xml:28:13-37
+73
+74        <service
+74-->[androidx.camera:camera-camera2:1.2.0-alpha02] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4e85ddc121ccaa1b1d8d9e3d560cbf2c/transformed/camera-camera2-1.2.0-alpha02/AndroidManifest.xml:25:9-34:19
+75            android:name="androidx.camera.core.impl.MetadataHolderService"
+75-->[androidx.camera:camera-camera2:1.2.0-alpha02] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4e85ddc121ccaa1b1d8d9e3d560cbf2c/transformed/camera-camera2-1.2.0-alpha02/AndroidManifest.xml:26:13-75
+76            android:enabled="false"
+76-->[androidx.camera:camera-camera2:1.2.0-alpha02] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4e85ddc121ccaa1b1d8d9e3d560cbf2c/transformed/camera-camera2-1.2.0-alpha02/AndroidManifest.xml:27:13-36
+77            android:exported="false" >
+77-->[androidx.camera:camera-camera2:1.2.0-alpha02] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4e85ddc121ccaa1b1d8d9e3d560cbf2c/transformed/camera-camera2-1.2.0-alpha02/AndroidManifest.xml:28:13-37
+78            <meta-data
+78-->[androidx.camera:camera-camera2:1.2.0-alpha02] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4e85ddc121ccaa1b1d8d9e3d560cbf2c/transformed/camera-camera2-1.2.0-alpha02/AndroidManifest.xml:31:13-33:89
+79                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+79-->[androidx.camera:camera-camera2:1.2.0-alpha02] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4e85ddc121ccaa1b1d8d9e3d560cbf2c/transformed/camera-camera2-1.2.0-alpha02/AndroidManifest.xml:32:17-103
+80                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+80-->[androidx.camera:camera-camera2:1.2.0-alpha02] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4e85ddc121ccaa1b1d8d9e3d560cbf2c/transformed/camera-camera2-1.2.0-alpha02/AndroidManifest.xml:33:17-86
+81        </service>
+82
+83        <provider
+83-->[androidx.emoji2:emoji2:1.2.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/3b0f8e3db5e6b982173b37f5fe88f5d3/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+84            android:name="androidx.startup.InitializationProvider"
+84-->[androidx.emoji2:emoji2:1.2.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/3b0f8e3db5e6b982173b37f5fe88f5d3/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+85            android:authorities="com.google.mediapipe.examples.gesturerecognizer.androidx-startup"
+85-->[androidx.emoji2:emoji2:1.2.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/3b0f8e3db5e6b982173b37f5fe88f5d3/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+86            android:exported="false" >
+86-->[androidx.emoji2:emoji2:1.2.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/3b0f8e3db5e6b982173b37f5fe88f5d3/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+87            <meta-data
+87-->[androidx.emoji2:emoji2:1.2.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/3b0f8e3db5e6b982173b37f5fe88f5d3/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+88                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+88-->[androidx.emoji2:emoji2:1.2.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/3b0f8e3db5e6b982173b37f5fe88f5d3/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+89                android:value="androidx.startup" />
+89-->[androidx.emoji2:emoji2:1.2.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/3b0f8e3db5e6b982173b37f5fe88f5d3/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+90            <meta-data
+90-->[androidx.lifecycle:lifecycle-process:2.4.1] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/9cc7fb7e5fe54ba7ec986191d955de63/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+91                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+91-->[androidx.lifecycle:lifecycle-process:2.4.1] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/9cc7fb7e5fe54ba7ec986191d955de63/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+92                android:value="androidx.startup" />
+92-->[androidx.lifecycle:lifecycle-process:2.4.1] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/9cc7fb7e5fe54ba7ec986191d955de63/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+93        </provider>
+94
+95        <service
+95-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4ee21f87de6641eeab6037e6e425cec7/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:29:9-35:19
+96            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+96-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4ee21f87de6641eeab6037e6e425cec7/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:30:13-103
+97            android:exported="false" >
+97-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4ee21f87de6641eeab6037e6e425cec7/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:31:13-37
+98            <meta-data
+98-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4ee21f87de6641eeab6037e6e425cec7/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:32:13-34:39
+99                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+99-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4ee21f87de6641eeab6037e6e425cec7/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:33:17-94
+100                android:value="cct" />
+100-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/4ee21f87de6641eeab6037e6e425cec7/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:34:17-36
+101        </service>
+102        <service
+102-->[com.google.android.datatransport:transport-runtime:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/90ced2a24a756e20fec64b1730ca17cf/transformed/transport-runtime-3.1.0/AndroidManifest.xml:26:9-30:19
+103            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+103-->[com.google.android.datatransport:transport-runtime:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/90ced2a24a756e20fec64b1730ca17cf/transformed/transport-runtime-3.1.0/AndroidManifest.xml:27:13-117
+104            android:exported="false"
+104-->[com.google.android.datatransport:transport-runtime:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/90ced2a24a756e20fec64b1730ca17cf/transformed/transport-runtime-3.1.0/AndroidManifest.xml:28:13-37
+105            android:permission="android.permission.BIND_JOB_SERVICE" >
+105-->[com.google.android.datatransport:transport-runtime:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/90ced2a24a756e20fec64b1730ca17cf/transformed/transport-runtime-3.1.0/AndroidManifest.xml:29:13-69
+106        </service>
+107
+108        <receiver
+108-->[com.google.android.datatransport:transport-runtime:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/90ced2a24a756e20fec64b1730ca17cf/transformed/transport-runtime-3.1.0/AndroidManifest.xml:32:9-34:40
+109            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+109-->[com.google.android.datatransport:transport-runtime:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/90ced2a24a756e20fec64b1730ca17cf/transformed/transport-runtime-3.1.0/AndroidManifest.xml:33:13-132
+110            android:exported="false" />
+110-->[com.google.android.datatransport:transport-runtime:3.1.0] /run/media/ruimk2/sda3/Applications/Android_SDK/.gradle/caches/8.9/transforms/90ced2a24a756e20fec64b1730ca17cf/transformed/transport-runtime-3.1.0/AndroidManifest.xml:34:13-37
+111    </application>
+112
+113</manifest>

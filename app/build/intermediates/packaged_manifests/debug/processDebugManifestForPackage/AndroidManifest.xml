@@ -18,7 +18,7 @@
     xmlns:dist="http://schemas.android.com/apk/distribution"
     package="com.google.mediapipe.examples.gesturerecognizer"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="3.23.25" >
 
     <uses-sdk
         android:minSdkVersion="24"
@@ -48,7 +48,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:taskAffinity=""
-        android:testOnly="true"
         android:theme="@style/Theme.GestureRecognizer" >
         <activity
             android:name="com.google.mediapipe.examples.gesturerecognizer.MainActivity"

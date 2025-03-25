@@ -67,4 +67,29 @@
             android:layout_below="@id/navigation"
             android:background="@android:color/darker_gray" />
     </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/mp_color_primary"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_backspace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Backspace"
+            android:backgroundTint="@color/mp_color_primary"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

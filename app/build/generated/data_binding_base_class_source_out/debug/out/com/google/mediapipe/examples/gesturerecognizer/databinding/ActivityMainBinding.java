@@ -4,6 +4,8 @@ package com.google.mediapipe.examples.gesturerecognizer.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
@@ -22,6 +24,15 @@ public final class ActivityMainBinding implements ViewBinding {
   private final CoordinatorLayout rootView;
 
   @NonNull
+  public final Button btnBackspace;
+
+  @NonNull
+  public final Button btnClear;
+
+  @NonNull
+  public final LinearLayout buttonContainer;
+
+  @NonNull
   public final FragmentContainerView fragmentContainer;
 
   @NonNull
@@ -33,10 +44,14 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final View view;
 
-  private ActivityMainBinding(@NonNull CoordinatorLayout rootView,
+  private ActivityMainBinding(@NonNull CoordinatorLayout rootView, @NonNull Button btnBackspace,
+      @NonNull Button btnClear, @NonNull LinearLayout buttonContainer,
       @NonNull FragmentContainerView fragmentContainer, @NonNull BottomNavigationView navigation,
       @NonNull Toolbar toolbar, @NonNull View view) {
     this.rootView = rootView;
+    this.btnBackspace = btnBackspace;
+    this.btnClear = btnClear;
+    this.buttonContainer = buttonContainer;
     this.fragmentContainer = fragmentContainer;
     this.navigation = navigation;
     this.toolbar = toolbar;
@@ -70,6 +85,24 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btn_backspace;
+      Button btnBackspace = ViewBindings.findChildViewById(rootView, id);
+      if (btnBackspace == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_clear;
+      Button btnClear = ViewBindings.findChildViewById(rootView, id);
+      if (btnClear == null) {
+        break missingId;
+      }
+
+      id = R.id.button_container;
+      LinearLayout buttonContainer = ViewBindings.findChildViewById(rootView, id);
+      if (buttonContainer == null) {
+        break missingId;
+      }
+
       id = R.id.fragment_container;
       FragmentContainerView fragmentContainer = ViewBindings.findChildViewById(rootView, id);
       if (fragmentContainer == null) {
@@ -94,8 +127,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((CoordinatorLayout) rootView, fragmentContainer, navigation,
-          toolbar, view);
+      return new ActivityMainBinding((CoordinatorLayout) rootView, btnBackspace, btnClear,
+          buttonContainer, fragmentContainer, navigation, toolbar, view);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
